@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sourav Kumar — Full-Stack Developer</title>
+<title>Md kaif — Full-Stack Developer</title>
 <meta name="description" content="Portfolio of Md Kaif — Full-Stack Developer & DSA enthusiast. React, Node.js, Express. Open to internships."/>
 <meta property="og:title" content="Md Kaif — Full-Stack Developer"/>
 <meta property="og:description" content="B.Tech CSE at LPU. Building scalable web apps, solving DSA problems, and crafting great user experiences."/>
@@ -984,10 +984,10 @@ Designed and implemented a relational database system for managing student recor
     <div class="ai-msg bot">Hey! I'm kaif's AI assistant. Ask me about his projects, skills, experience, or how to reach him!</div>
   </div>
   <div class="ai-chips">
-    <button class="ai-chip" onclick="ask('What projects has Sourav built?')">Projects</button>
-    <button class="ai-chip" onclick="ask('What are Sourav\\'s skills?')">Skills</button>
-    <button class="ai-chip" onclick="ask('Is Sourav open to internships?')">Hire him</button>
-    <button class="ai-chip" onclick="ask('Tell me about Sourav\\'s achievements.')">Achievements</button>
+    <button class="ai-chip" onclick="ask('What projects has Kaif built?')">Projects</button>
+    <button class="ai-chip" onclick="ask('What are Kaif\\'s skills?')">Skills</button>
+    <button class="ai-chip" onclick="ask('Is Kaif open to internships?')">Hire him</button>
+    <button class="ai-chip" onclick="ask('Tell me about Kaif\\'s achievements.')">Achievements</button>
   </div>
   <div class="ai-input-row">
     <button id="voice-btn" onclick="toggleVoice()" title="Voice input">🎙️</button>
@@ -1055,10 +1055,10 @@ async function sendAI(){
   try{
     const r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:history})});
     const d=await r.json();t.remove();
-    const rep=d.reply||"I'm not sure — reach Sourav at kaifmd197@gmail.com.";
+    const rep=d.reply||"I'm not sure — reach Kaif at kaifmd197@gmail.com.";
     addMsg('bot',rep);history.push({role:'assistant',content:rep});
     if(window.speechSynthesis&&tts){const u=new SpeechSynthesisUtterance(rep);u.lang='en-US';window.speechSynthesis.speak(u);}
-  }catch(e){t.remove();addMsg('bot',"Error. Contact Sourav at kaifmd197@gmail.com.");}
+  }catch(e){t.remove();addMsg('bot',"Error. Contact Kaif at kaifmd197@gmail.com.");}
 }
 function addMsg(role,text){const d=document.createElement('div');d.className='ai-msg '+role;d.textContent=text;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d;}
 function addTyping(){const d=document.createElement('div');d.className='ai-typing';d.innerHTML='<div class="tdots"><span></span><span></span><span></span></div>';msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d;}

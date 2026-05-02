@@ -689,11 +689,34 @@ footer a{color:var(--em);text-decoration:none;}
   <div class="inner">
     <div class="sec-eye reveal">Projects</div>
     <h2 class="sec-title reveal">Things I've <em>Built</em></h2>
-    <p class="sec-desc reveal">Real-world AI apps, chatbots, and database systems.</p>
+    <p class="sec-desc reveal">Real-world AI apps, chatbots, and full-stack systems.</p>
 
     <div class="proj-grid">
 
-      <!-- Project 1: AI Image Detection -->
+      <!-- Project 1: LocalFix -->
+      <a href="https://localfix-seven.vercel.app/" target="_blank" style="text-decoration: none; color: inherit;">
+        <div class="proj-card reveal" data-cat="fullstack">
+          <div class="proj-preview" style="background:linear-gradient(135deg,rgba(34,197,94,0.15),rgba(0,245,255,0.1));">
+            <span>🔧</span>
+          </div>
+          <div class="proj-body">
+            <div class="proj-title-row">
+              <span class="proj-title">LocalFix</span>
+            </div>
+            <p class="proj-desc">
+              Production-ready multi-role service marketplace connecting users with local workers. Features real-time booking via Socket.io with auto-timeout logic, Razorpay payment gateway, and GPS-based worker discovery using MongoDB geospatial queries. Includes Aadhaar-verified dual-role auth, bcrypt password hashing, arrival OTP handshake, and live worker location tracking via Leaflet.js.
+            </p>
+            <div class="proj-tech">
+              <span class="tag tag-green" style="font-size:.75rem;">🟢 Node.js</span>
+              <span class="tag tag-cyan" style="font-size:.75rem;">⚡ Socket.io</span>
+              <span class="tag tag-purple" style="font-size:.75rem;">🍃 MongoDB</span>
+              <span class="tag tag-orange" style="font-size:.75rem;">💳 Razorpay</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: AI Image Detection -->
       <a href="https://ai-image-detector.framer.website/" target="_blank" style="text-decoration: none; color: inherit;">
         <div class="proj-card reveal" data-cat="ai">
           <div class="proj-preview" style="background:linear-gradient(135deg,rgba(168,85,247,0.15),rgba(0,245,255,0.1));">
@@ -701,21 +724,22 @@ footer a{color:var(--em);text-decoration:none;}
           </div>
           <div class="proj-body">
             <div class="proj-title-row">
-              <span class="proj-title">AI Image Detection</span>
+              <span class="proj-title">AI Image Detector</span>
             </div>
             <p class="proj-desc">
-AI-powered platform that detects whether an image is AI-generated or real using computer vision models. Built with FastAPI backend and deployed on Render, with a modern Framer UI for seamless interaction. Handles real-time predictions, efficient API calls, and scalable architecture for practical use cases like content verification and fraud detection.
-</p>
+              Binary image classifier using CNN + EfficientNet transfer learning trained on 70,000+ images, achieving ~92% validation accuracy to distinguish AI-generated vs. real images. Deployed end-to-end ML pipeline with FastAPI backend on Railway and Framer frontend — inference time under 2 seconds per image, with OpenCV-based preprocessing reducing dataset noise by ~15%.
+            </p>
             <div class="proj-tech">
               <span class="tag tag-purple" style="font-size:.75rem;">🤖 AI</span>
-              <span class="tag tag-cyan" style="font-size:.75rem;">👁️ Computer Vision</span>
+              <!-- <span class="tag tag-cyan" style="font-size:.75rem;">👁️ Computer Vision</span> -->
               <span class="tag tag-green" style="font-size:.75rem;">Python</span>
+              <span class="tag tag-orange" style="font-size:.75rem;">FastAPI</span>
             </div>
           </div>
         </div>
       </a>
 
-      <!-- Project 2: Mira Chatbot -->
+      <!-- Project 3: Mira Chatbot -->
       <a href="https://ai-mira-chatbot.vercel.app/" target="_blank" style="text-decoration: none; color: inherit;">
         <div class="proj-card reveal" data-cat="ai">
           <div class="proj-preview" style="background:linear-gradient(135deg,rgba(0,245,255,0.1),rgba(59,130,246,0.15));">
@@ -723,39 +747,19 @@ AI-powered platform that detects whether an image is AI-generated or real using 
           </div>
           <div class="proj-body">
             <div class="proj-title-row">
-              <span class="proj-title">Mira AI Chatbot</span>
+              <span class="proj-title">Mira — Gen Z AI Chatbot</span>
             </div>
             <p class="proj-desc">
-Mira is an intelligent AI chatbot designed with personality, humor, and emotional intelligence. It delivers context-aware responses using OpenAI API and a Node.js + Express backend. Built as a full-stack application with real-time interaction, clean UI, and conversational memory, making it feel like a human-like assistant.
-</p>
+              Conversational AI chatbot powered by Groq API with LLaMA 3.3 70B model, delivering sub-second low-latency responses with a Gen Z-oriented personality. Features context-aware multi-turn dialogue with session management and dynamic prompt engineering for consistent personality behavior. Full-stack app deployed on Vercel.
+            </p>
             <div class="proj-tech">
-              <span class="tag tag-cyan" style="font-size:.75rem;">🧠 OpenAI API</span>
+              <span class="tag tag-cyan" style="font-size:.75rem;">🧠 Groq API</span>
               <span class="tag tag-green" style="font-size:.75rem;">🟢 Node.js</span>
-              <span class="tag tag-orange" style="font-size:.75rem;">Express</span>
+              <span class="tag tag-orange" style="font-size:.75rem;">LLaMA 3.3 70B</span>
             </div>
           </div>
         </div>
       </a>
-
-      <!-- Project 3: Database Project -->
-      <div class="proj-card reveal" data-cat="db">
-        <div class="proj-preview" style="background:linear-gradient(135deg,rgba(59,130,246,0.12),rgba(0,245,255,0.08));">
-          <span>🗄️</span>
-        </div>
-        <div class="proj-body">
-          <div class="proj-title-row">
-            <span class="proj-title">Relational DB Mini Project</span>
-          </div>
-          <p class="proj-desc">
-Designed and implemented a relational database system for managing student records and scores. Applied normalization, joins, subqueries, and aggregation to ensure efficient data retrieval. Focused on query optimization and structured schema design to handle real-world data scenarios.
-</p>
-          <div class="proj-tech">
-            <span class="tag tag-blue" style="font-size:.75rem;">🗄️ SQL</span>
-            <span class="tag tag-cyan" style="font-size:.75rem;">🐬 MySQL</span>
-            <span class="tag badge-wip" style="font-size:.75rem;">In Progress</span>
-          </div>
-        </div>
-      </div>
 
     </div>
   </div>
